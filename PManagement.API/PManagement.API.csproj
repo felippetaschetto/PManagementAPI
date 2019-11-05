@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <UserSecretsId>5a6e12b3-7d86-43ab-976f-0c88bb222e42</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.Internal" Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PManagement.DataProvider\PManagement.DataProvider.csproj" />
+    <ProjectReference Include="..\PManagement.Entity\PManagement.Entity.csproj" />
+    <ProjectReference Include="..\PManagement.Storage\PManagement.Storage.csproj" />
+    <ProjectReference Include="..\PManagement.Utils\PManagement.Utils.csproj" />
+  </ItemGroup>
+
+</Project>
